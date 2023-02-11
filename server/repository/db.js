@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
+const uri = process.env.db_uri
 
-const uri = "mongodb+srv://diegobreeg:root@empyrioncalculator.sfhbh2q.mongodb.net/?retryWrites=true&w=majority"
 const options = { useNewUrlParser: true, useUnifiedTopology: true }
 
 const connectDatabase = async () => {
