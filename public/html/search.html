@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/emp_icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <nav>
+        <h2>Empyrion Calculator</h2>
+        <ul>
+            <li><a href="/html/search.html">Search</a></li>
+            <li><a href="/html/calculator.html">Calculator</a></li>
+            <li><a href="/html/register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div id="feedback-form">
+        <h2 class="header">Search Item</h2>
+        <div>
+            <input type="text" placeholder="Item Name" id="item_name" autocomplete="off" onchange="format()" name="imput_name" list="list"></input>
+            <datalist id="list"></datalist>
+            <button onclick="search()">Search</button>
+        </div>
+    </div>
+    <div id="response_container"></div>
+
+</body>
+<script defer src="/javascript/search.js"></script>
+
+</html>
