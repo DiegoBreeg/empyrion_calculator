@@ -30,7 +30,7 @@ async function register() {
     }
     console.log(data)
 
-    let response = await fetch('/register', {
+    let response = await fetch('/items', {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
